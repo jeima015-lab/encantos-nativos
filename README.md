@@ -27,6 +27,9 @@ de build ni carpeta de salida: los archivos van en la raíz.
 - **Textos:** se editan directamente en `index.html`.
 - **Fotos:** se reemplazan en `img/` conservando el mismo nombre de archivo.
   Antes de subirlas, reducirlas a 1000 px de ancho y menos de 250 KB.
+  Como el nombre no cambia, los navegadores que ya tengan la foto vieja la
+  conservan hasta un día. Para que el cambio se vea de inmediato, súbele el
+  número de versión a la URL en `index.html`: `img/foto.jpg?v=2` → `?v=3`.
 - **Dominio:** aparece en `index.html` (canonical, `og:url`, `og:image`) y en
   `sitemap.xml`. Si cambia, hay que actualizarlo en los cuatro sitios.
 
