@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Esta página se perdió en el monte — Encantos Nativos</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1C4524">
+<link rel="icon" href="/img/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&family=Karla:wght@400;700&display=swap">
+
+<style>
+:root{
+  --bosque:#1C4524; --bosque-2:#122E17; --papel:#FAF5E9; --guadua:#6DBE2C;
+  --barranquero:#E2913F;
+  --display:"Fraunces","Iowan Old Style",Georgia,serif;
+  --texto:"Karla","Helvetica Neue",Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background:var(--bosque-2); color:var(--papel);
+  font-family:var(--texto); font-size:17px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  display:flex; flex-direction:column;
+}
+img{display:block; max-width:100%}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--barranquero); outline-offset:3px; border-radius:6px}
+
+.fondo{
+  position:fixed; inset:0; z-index:-2;
+  background:url("/img/finca.jpg") center/cover no-repeat;
+  opacity:.28;
+}
+.velo{position:fixed; inset:0; z-index:-1;
+  background:radial-gradient(120% 90% at 50% 10%, rgba(18,46,23,.55), rgba(18,46,23,.96))}
+
+.env{width:100%; max-width:640px; margin:auto; padding:48px 20px; text-align:center}
+.sello{width:clamp(104px,16vw,132px); margin:0 auto 28px;
+  filter:drop-shadow(0 2px 12px rgba(8,20,10,.6))}
+.codigo{
+  font-family:var(--display); font-size:clamp(56px,14vw,96px); font-weight:600;
+  line-height:1; letter-spacing:-.03em; color:var(--guadua); margin:0 0 6px;
+}
+h1{font-family:var(--display); font-weight:600; font-size:clamp(24px,4.2vw,34px);
+  line-height:1.2; margin:0 0 14px; text-wrap:balance}
+h1 em{font-style:italic; color:var(--barranquero)}
+p{margin:0 auto 30px; max-width:46ch; color:rgba(250,245,233,.82)}
+
+.acciones{display:flex; flex-wrap:wrap; gap:12px; justify-content:center}
+.btn{
+  display:inline-flex; align-items:center; gap:9px; padding:13px 22px;
+  border-radius:999px; text-decoration:none; font-weight:700; font-size:15px;
+  border:1.5px solid transparent; transition:transform .18s ease, filter .18s ease;
+}
+.btn:hover{transform:translateY(-1px); filter:brightness(1.07)}
+.btn--wa{background:#25D366; color:#07310F}
+.btn--linea{border-color:rgba(250,245,233,.5); color:var(--papel)}
+
+.atajos{margin-top:38px; padding-top:24px; border-top:1px solid rgba(250,245,233,.18);
+  font-size:14.5px}
+.atajos p{margin:0 0 12px; color:rgba(250,245,233,.6)}
+.atajos ul{list-style:none; margin:0; padding:0;
+  display:flex; flex-wrap:wrap; gap:8px 22px; justify-content:center}
+.atajos a{color:rgba(250,245,233,.9)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="fondo"></div>
+<div class="velo"></div>
+
+<main class="env">
+  <img class="sello" src="/img/logo-blanco.png" alt="Encantos Nativos">
+  <p class="codigo">404</p>
+  <h1>Esta página se <em>perdió en el monte</em></h1>
+  <p>La dirección que buscas no existe o cambió de lugar. Devolvámonos al sendero
+  principal, que de allá sale todo.</p>
+
+  <div class="acciones">
+    <a class="btn btn--linea" href="/">Volver al inicio</a>
+    <a class="btn btn--wa" href="https://wa.me/573147953068?text=Hola%20Encantos%20Nativos%2C%20quiero%20preguntar%20por%20los%20planes" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+  </div>
+
+  <nav class="atajos">
+    <p>O ve directo a:</p>
+    <ul>
+      <li><a href="/#experiencias">Experiencias</a></li>
+      <li><a href="/#alojamiento">Alojamiento</a></li>
+      <li><a href="/#sabores">Comida típica</a></li>
+      <li><a href="/#lugar">Cómo llegar</a></li>
+      <li><a href="/#contacto">Reservas</a></li>
+    </ul>
+  </nav>
+</main>
+
+</body>
+</html>
