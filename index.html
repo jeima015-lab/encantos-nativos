@@ -41,6 +41,11 @@
     "addressRegion": "Antioquia",
     "addressCountry": "CO"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 6.2762177,
+    "longitude": -75.0346185
+  },
   "hasMap": "https://maps.app.goo.gl/cBhWujCbDsFYWjBEA",
   "sameAs": [
     "https://www.instagram.com/encantosnativosturismorural/"
@@ -243,6 +248,23 @@ p{margin:0}
 .galeria img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease}
 .galeria figure:hover img{transform:scale(1.05)}
 
+/* ---------- Opiniones ---------- */
+.estrellas{display:flex; align-items:center; gap:10px; margin-top:18px; font-size:15px; color:var(--suave)}
+.estrellas svg{color:var(--barranquero)}
+.banda--bosque .estrellas{color:rgba(250,245,233,.78)}
+.banda--bosque .estrellas svg{color:var(--guadua)}
+.opiniones{display:grid; gap:20px; margin-top:40px}
+@media (min-width:760px){ .opiniones{grid-template-columns:repeat(3,1fr)} }
+.opinion{
+  background:var(--papel); border:1px solid var(--linea); border-radius:var(--radio);
+  padding:26px 24px; display:flex; flex-direction:column; min-width:0;
+}
+.opinion blockquote{margin:0 0 18px; font-size:15.5px; line-height:1.65; color:var(--tinta)}
+.opinion blockquote::before{content:"\201C"; font-family:var(--display); font-size:44px;
+  line-height:0; color:var(--barranquero-txt); margin-right:3px; vertical-align:-10px}
+.opinion footer{margin-top:auto; font-size:13.5px; color:var(--suave)}
+.opinion cite{display:block; font-style:normal; font-weight:700; color:var(--tinta); font-size:14.5px}
+
 /* ---------- Ubicación ---------- */
 .lugar{display:grid; gap:36px; align-items:center}
 @media (min-width:880px){ .lugar{grid-template-columns:1fr 1fr; gap:56px} }
@@ -301,6 +323,7 @@ p{margin:0}
       <a href="#experiencias">Experiencias</a>
       <a href="#alojamiento">Alojamiento</a>
       <a href="#sabores">Sabores</a>
+      <a href="#opiniones">Opiniones</a>
       <a href="#lugar">Cómo llegar</a>
     </nav>
     <a class="btn btn--wa" href="https://wa.me/573147953068?text=Hola%20Encantos%20Nativos%2C%20quiero%20reservar" target="_blank" rel="noopener">Reservar</a>
@@ -541,6 +564,37 @@ p{margin:0}
       <figure><img src="img/finca.jpg" alt="Panorámica de la finca entre montañas" loading="lazy"></figure>
       <figure><img src="img/hamaca.jpg" alt="Corredor de la cabaña con hamaca" loading="lazy"></figure>
     </div>
+  </div>
+</section>
+
+<section class="banda" id="opiniones">
+  <div class="env">
+    <p class="eyebrow">Lo que dicen quienes vinieron</p>
+    <h2 class="titulo">12 opiniones, todas de cinco estrellas</h2>
+    <p class="entradilla">Estas son reseñas publicadas por visitantes en Google, sin editar.</p>
+    <p class="estrellas">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1Z"/></svg>
+      <span><strong>5,0</strong> de 5 · 12 opiniones en Google</span>
+    </p>
+
+    <div class="opiniones">
+      <article class="opinion">
+        <blockquote>Encantos Nativos es un lugar perfecto para aquellas personas que valoran la conexión real con la naturaleza y su entorno, alejado del ruido. Se pueden vivir experiencias únicas, como apreciar el proceso y el nacimiento de mariposas monarcas…</blockquote>
+        <footer><cite>Ginneth Lizeth Montoya</cite>Opinión en Google</footer>
+      </article>
+      <article class="opinion">
+        <blockquote>Encantos Nativos es un lugar mágico, perfecto para parejas que buscan descanso y conexión. La cabaña es acogedora, rodeada de naturaleza y pensada con mucho amor. Se siente paz, silencio y calidez en cada rincón. Un hospedaje para recordar y repetir.</blockquote>
+        <footer><cite>Victor Garcia</cite>Local Guide · Opinión en Google</footer>
+      </article>
+      <article class="opinion">
+        <blockquote>Encantos es un lugar muy acogedor, lleno de naturaleza, buena comida, y muchas experiencias hermosas, como por ejemplo ver nacer una mariposa para después liberarla…</blockquote>
+        <footer><cite>Luisa Agudelo</cite>Local Guide · Opinión en Google</footer>
+      </article>
+    </div>
+
+    <p style="margin-top:28px">
+      <a class="btn btn--linea" style="color:var(--bosque)" href="https://maps.app.goo.gl/cBhWujCbDsFYWjBEA" target="_blank" rel="noopener">Leer las 12 opiniones en Google</a>
+    </p>
   </div>
 </section>
 
