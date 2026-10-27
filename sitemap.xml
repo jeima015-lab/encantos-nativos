@@ -2,4 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.encantosnativos.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
   <url><loc>https://www.encantosnativos.com/politica-de-datos.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.encantosnativos.com/experiencia-aves.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.encantosnativos.com/experiencia-cacao.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.encantosnativos.com/experiencia-apicultura.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.encantosnativos.com/experiencia-cafe.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.encantosnativos.com/experiencia-cascadas.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.encantosnativos.com/experiencia-caminatas.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
 </urlset>

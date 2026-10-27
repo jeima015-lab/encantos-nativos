@@ -191,6 +191,7 @@ p{margin:0}
   display:flex; flex-direction:column; min-width:0;
   border:1px solid rgba(250,245,233,.1);
 }
+.tarjeta > a{display:flex; flex-direction:column; text-decoration:none; color:inherit; min-width:0}
 .tarjeta__foto{aspect-ratio:4/3; overflow:hidden}
 .tarjeta__foto img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease}
 .tarjeta:hover .tarjeta__foto img{transform:scale(1.04)}
@@ -204,7 +205,8 @@ p{margin:0}
 .fichas{display:grid; gap:14px; margin-top:22px}
 @media (min-width:620px){ .fichas{grid-template-columns:repeat(2,1fr)} }
 @media (min-width:980px){ .fichas{grid-template-columns:repeat(4,1fr)} }
-.ficha{background:rgba(250,245,233,.07); border:1px solid rgba(250,245,233,.14); border-radius:14px; padding:18px 18px 20px; min-width:0}
+.ficha{background:rgba(250,245,233,.07); border:1px solid rgba(250,245,233,.14); border-radius:14px; padding:18px 18px 20px; min-width:0; display:block; text-decoration:none; transition:background .2s}
+.ficha:hover{background:rgba(250,245,233,.13)}
 .ficha strong{display:block; font-family:var(--display); font-weight:600; font-size:17px; color:#FAF5E9; margin-bottom:5px}
 .ficha span{font-size:14px; line-height:1.55; color:rgba(250,245,233,.72)}
 
@@ -388,25 +390,40 @@ p{margin:0}
 
     <div class="exp">
       <article class="tarjeta">
+        <a href="experiencia-aves.html">
         <div class="tarjeta__foto"><img src="img/aves.jpg" alt="Ave de pecho naranja posada en una rama del bosque" loading="lazy"></div>
         <div class="tarjeta__cuerpo">
           <h3>Avistamiento de aves</h3>
           <p>Salidas temprano con binoculares y guía local. Barranqueros, tucanetas y tangaras entre el bosque y los cultivos de la finca.</p>
         </div>
+        </a>
       </article>
       <article class="tarjeta">
+        <a href="experiencia-cacao.html">
         <div class="tarjeta__foto"><img src="img/cacao.jpg?v=2" alt="Tres mazorcas de cacao maduras, rojas y naranjas, colgando de la rama de un árbol" loading="lazy"></div>
         <div class="tarjeta__cuerpo">
           <h3>Experiencia de cacao</h3>
           <p>Del árbol a la taza: cosecha, fermentación, tostado y una cata del chocolate que sale de esta misma montaña.</p>
         </div>
+        </a>
       </article>
       <article class="tarjeta">
+        <a href="experiencia-cafe.html">
+        <div class="tarjeta__foto"><img src="img/cacao-taza.jpg" alt="Vaso alto de café frío con dibujo de caramelo, sobre un mantel de mariposas, frente al jardín" loading="lazy"></div>
+        <div class="tarjeta__cuerpo">
+          <h3>Café artesanal</h3>
+          <p>Café de San Rafael, del grano a la taza: recolección, tostión a mano y preparación en el fogón.</p>
+        </div>
+        </a>
+      </article>
+      <article class="tarjeta">
+        <a href="experiencia-caminatas.html">
         <div class="tarjeta__foto"><img src="img/caminata.jpg?v=2" alt="Grupo de caminantes celebrando en un sendero, con el valle y las montañas de San Rafael al fondo" loading="lazy"></div>
         <div class="tarjeta__cuerpo">
           <h3>Caminatas ecológicas</h3>
           <p>Senderos de media jornada por bosque y quebradas, con paradas en los miradores y en los charcos del camino.</p>
         </div>
+        </a>
       </article>
       <article class="tarjeta">
         <div class="tarjeta__foto"><img src="img/mariposas.jpg" alt="Mariposa monarca posada sobre el rostro de una visitante" loading="lazy"></div>
@@ -449,9 +466,8 @@ p{margin:0}
       <h3>También en el territorio</h3>
       <p>San Rafael da para mucho más que el cacao. Estas experiencias se coordinan con vecinos y fincas de la zona según la temporada.</p>
       <div class="fichas">
-        <div class="ficha"><strong>Apicultura</strong><span>Visita a las colmenas, cómo trabaja la abeja y cata de mieles de la montaña.</span></div>
-        <div class="ficha"><strong>Café artesanal</strong><span>Café de San Rafael, del grano a la taza: recolección, tostión a mano y preparación en el fogón.</span></div>
-        <div class="ficha"><strong>Cascadas y charcos</strong><span>Caminata hasta las caídas de agua y los balnearios naturales de la vereda.</span></div>
+        <a href="experiencia-apicultura.html" class="ficha"><strong>Apicultura</strong><span>Visita a las colmenas, cómo trabaja la abeja y cata de mieles de la montaña.</span></a>
+        <a href="experiencia-cascadas.html" class="ficha"><strong>Cascadas y charcos</strong><span>Caminata hasta las caídas de agua y los balnearios naturales de la vereda.</span></a>
         <div class="ficha"><strong>Vivero y cultivos de casa</strong><span>Plantas nativas, huerta y flores: lo que se siembra y lo que llega a la mesa.</span></div>
       </div>
       <div style="margin-top:26px">
