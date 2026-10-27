@@ -54,6 +54,45 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Dónde queda Encantos Nativos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "En la vereda La Honda, sector El Trocadero, municipio de San Rafael, Antioquia, en el Oriente antioqueño." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se llega desde Medellín?",
+      "acceptedAnswer": { "@type": "Answer", "text": "En aproximadamente 3 horas en carro, por la vía Marinilla – El Peñol – Guatapé." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué experiencias ofrece Encantos Nativos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Avistamiento de aves, experiencia de cacao, café artesanal, caminatas ecológicas, cascadas y charcos, apicultura y jardín de mariposas, entre otras, según los días que tengas y la temporada." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hay alojamiento en la finca?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, una cabaña en guadua y madera abierta al bosque. Como por ahora es la única, conviene reservar con tiempo." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Encantos Nativos es solo para hospedarse?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. El plan son las experiencias de lo nativo; la cabaña está ahí para que te quedes a vivirlas sin afán." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se reserva?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Escribiendo por WhatsApp al 314 795 3068, para armar el plan según los días que tengas, cuántos vienen y qué quieren vivir." }
+    }
+  ]
+}
+</script>
+
 <style>
 img{max-width:100%}
 [hidden]{display:none!important}
@@ -268,6 +307,13 @@ p{margin:0}
 .opinion footer{margin-top:auto; font-size:13.5px; color:var(--suave)}
 .opinion cite{display:block; font-style:normal; font-weight:700; color:var(--tinta); font-size:14.5px}
 
+/* ---------- Preguntas frecuentes ---------- */
+.preguntas{display:grid; gap:1px; margin-top:44px; background:var(--linea); border:1px solid var(--linea); border-radius:var(--radio); overflow:hidden}
+@media (min-width:760px){ .preguntas{grid-template-columns:repeat(2,1fr)} }
+.pregunta{background:var(--papel-2); padding:24px 26px}
+.pregunta h3{font-size:17px; margin-bottom:8px}
+.pregunta p{font-size:14.5px; color:var(--suave); line-height:1.6}
+
 /* ---------- Ubicación ---------- */
 .lugar{display:grid; gap:36px; align-items:center}
 @media (min-width:880px){ .lugar{grid-template-columns:1fr 1fr; gap:56px} }
@@ -328,6 +374,7 @@ p{margin:0}
       <a href="#sabores">Sabores</a>
       <a href="#opiniones">Opiniones</a>
       <a href="#lugar">Cómo llegar</a>
+      <a href="#preguntas">Preguntas</a>
     </nav>
     <a class="btn btn--wa" href="https://wa.me/573147953068?text=Hola%20Encantos%20Nativos%2C%20quiero%20reservar" target="_blank" rel="noopener">Reservar</a>
   </div>
@@ -655,6 +702,39 @@ p{margin:0}
       <figure class="lugar__mapa" style="margin:0">
         <img src="img/mapa.jpg?v=2" alt="Mapa ilustrado en tres niveles: Colombia, el departamento de Antioquia, y el municipio de San Rafael con la vereda La Honda señalada" loading="lazy">
       </figure>
+    </div>
+  </div>
+</section>
+
+<section class="banda banda--papel2" id="preguntas">
+  <div class="env">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2 class="titulo">Antes de escribirnos</h2>
+    <div class="preguntas">
+      <div class="pregunta">
+        <h3>¿Dónde queda Encantos Nativos?</h3>
+        <p>En la vereda La Honda, sector El Trocadero, municipio de San Rafael, Antioquia, en el Oriente antioqueño.</p>
+      </div>
+      <div class="pregunta">
+        <h3>¿Cómo se llega desde Medellín?</h3>
+        <p>En aproximadamente 3 horas en carro, por la vía Marinilla – El Peñol – Guatapé.</p>
+      </div>
+      <div class="pregunta">
+        <h3>¿Qué experiencias ofrece Encantos Nativos?</h3>
+        <p>Avistamiento de aves, experiencia de cacao, café artesanal, caminatas ecológicas, cascadas y charcos, apicultura y jardín de mariposas, entre otras, según los días que tengas y la temporada.</p>
+      </div>
+      <div class="pregunta">
+        <h3>¿Hay alojamiento en la finca?</h3>
+        <p>Sí, una cabaña en guadua y madera abierta al bosque. Como por ahora es la única, conviene reservar con tiempo.</p>
+      </div>
+      <div class="pregunta">
+        <h3>¿Encantos Nativos es solo para hospedarse?</h3>
+        <p>No. El plan son las experiencias de lo nativo; la cabaña está ahí para que te quedes a vivirlas sin afán.</p>
+      </div>
+      <div class="pregunta">
+        <h3>¿Cómo se reserva?</h3>
+        <p>Escribiendo por WhatsApp al 314 795 3068, para armar el plan según los días que tengas, cuántos vienen y qué quieren vivir.</p>
+      </div>
     </div>
   </div>
 </section>

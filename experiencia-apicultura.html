@@ -92,7 +92,26 @@ li{margin-bottom:8px}
 .pie{border-top:1px solid var(--linea); margin-top:52px; padding-block:28px;
   font-size:14.5px; color:var(--suave)}
 .pie a{color:inherit}
+.relacionadas{margin-top:48px; border-top:1px solid var(--linea); padding-top:30px}
+.relacionadas h2{margin-top:0}
+.relacionadas__lista{display:grid; gap:14px; list-style:none; padding:0; margin:18px 0 0}
+@media (min-width:560px){ .relacionadas__lista{grid-template-columns:repeat(2,1fr)} }
+.relacionadas__lista a{display:block; border:1px solid var(--linea); border-radius:12px; padding:16px 18px;
+  text-decoration:none; color:var(--tinta); font-weight:700; font-family:var(--display); font-size:16px}
+.relacionadas__lista a:hover{background:var(--papel-2)}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Apicultura — Encantos Nativos",
+  "description": "Experiencia de apicultura cerca de Encantos Nativos, San Rafael: visita a las colmenas y cata de mieles de la montaña.",
+  "url": "https://www.encantosnativos.com/experiencia-apicultura.html",
+  "image": "https://www.encantosnativos.com/img/finca.jpg",
+  "isPartOf": { "@type": "LodgingBusiness", "name": "Encantos Nativos", "url": "https://www.encantosnativos.com/" }
+}
+</script>
 </head>
 <body>
 
@@ -127,6 +146,14 @@ li{margin-bottom:8px}
   <p class="nota">Esta experiencia se coordina con vecinos y fincas de la zona según disponibilidad y temporada.</p>
 
   <p><a class="btn" href="https://wa.me/573147953068?text=Hola%2C%20quiero%20preguntar%20por%20la%20experiencia%20de%20apicultura" target="_blank" rel="noopener">Pregunta por este plan</a></p>
+
+  <div class="relacionadas">
+    <h2>También te puede interesar</h2>
+    <ul class="relacionadas__lista">
+      <li><a href="experiencia-cafe.html">Café artesanal</a></li>
+      <li><a href="experiencia-cascadas.html">Cascadas y charcos</a></li>
+    </ul>
+  </div>
 
   <div class="pie">
     <p><a href="/#experiencias">← Ver todas las experiencias</a></p>
